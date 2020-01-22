@@ -46,7 +46,9 @@ Build the spring application image
 
 Run spring container
 
-```docker run -d -p 8080:8080 --name spring-app spring-app```
+```docker run -d -p 8080:8080 --network some-network --name spring-app spring-app```
+
+
 
 # Test the application
 
