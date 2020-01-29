@@ -10,12 +10,12 @@ import org.springframework.context.annotation.Configuration;
 import org.springframework.data.jpa.repository.config.EnableJpaRepositories;
 
 @Configuration
-@EntityScan(basePackages = { "qcom.qa.notes" })
+@EntityScan(basePackages = { "com.qa.notes" })
 @EnableJpaRepositories(basePackages = { "com.qa.notes" })
 @EnableRdsInstance(dbInstanceIdentifier = "database-1", username = "example2", password = "", databaseName = "test")
 public class DbConfiguration {
 
-    @Value("${cloud.aws.region}")
+    @Value("eu-west-2")
     private String region;
 
     @Bean
